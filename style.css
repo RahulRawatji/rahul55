@@ -1,0 +1,96 @@
+*{
+  font-family: 'Alatsi', sans-serif;
+}
+@media screen and (max-width: 500px) {
+    .about{
+      font-size: 1rem;
+    }
+  }
+@media screen and (min-width: 501px) {
+    .about{
+      font-size: 1.5rem;
+    }
+  }
+.content{
+    text-align: center;
+    background-color: Dark (#262626);
+    font-size: 25px;
+    padding :5rem;
+    height: 60vh;
+}
+.about{
+    height: 45vh;
+    font-family: 'Hi Melody' !important;
+}
+
+.projects{
+    padding :2rem;
+    margin:3%;
+    height: 100vh;
+}
+.skills-main{
+  height: 45vh;
+  margin: 3%;
+}
+.skills{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+   
+}
+.skills > *{
+  flex: 1 1 20%;
+  margin: 7px;
+  color: #fff;
+ 
+}
+.btnn{
+  background-image: url('one.jpg');
+  border: none;
+  font-size: 2rem;
+  border-radius: 4px;
+  transition: ease-out 0.3s;
+  outline: none;
+  position: relative;
+  border: 2px solid ;
+  z-index: 1;
+}
+.btnn:hover{
+  color: #fff;
+}
+.btnn:before{
+  transition: 0.5s all ease;
+  position: absolute;
+  top:0;
+  left:50%;
+  right:50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color:#34568B;
+}
+.btnn:hover::before{
+  transition: 0.5s all ease;
+  left: 0;
+  right:0;
+  opacity: 200%;
+  z-index: -1;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("40.jpg");
+    opacity: 120%;
+
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .contact{
+    height:50vh;
+}
